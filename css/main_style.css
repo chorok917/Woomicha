@@ -857,6 +857,8 @@ input {
     border: none;
     display: inline-block;
     padding: 6px 20px 6px 6px;
+}
+.text {
     outline: none;
 }
 
