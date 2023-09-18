@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1320">
+    <title>우미차 優美茶 Graceful Tea</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/header&footer/favicon.png">
+    <!--webfont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/banner_swiper.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--js sorce-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!--top_btn-->
+        <a href="#banner">
+            <div class="top_btn">
+                <img src="images/header&footer/top_btn.png" alt="top_btn">
+            </div>
+        </a>
+        <!--header-->
+        <div class="header_fixed">
+            <header>
+                <div class="top">
+                    <div class="top_left">
+                        <a href="#">English</a>
+                        <a href="#">사업문의</a>
+                    </div>
+                    <div class="top_right">
+                        <div class="icon_wrap">
+                            <a href="#">
+                                <img src="images/header&footer/search_icon.png" alt="search_icon">
+                            </a>
+                        </div>
+                        <div class="icon_wrap">
+                            <a href="#">
+                                <img src="images/header&footer/cart_icon.png" alt="cart_icon">
+                            </a>
+                        </div>
+                        <div class="icon_wrap">
+                            <a href="#">
+                                <img src="images/header&footer/login_icon.png" alt="login_icon">
+                            </a>
+                        </div>
+                        <div class="icon_wrap ham_btn">
+                            <a href="#">
+                                <img src="images/header&footer/hamburger_btn_icon.png" alt="hamburger_btn_icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/header&footer/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <div class="gnb">
+                    <ul class="left_gnb">
+                        <li>
+                            <a href="#">브랜드</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">우미차에 대해 <span>About</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">우미네 차밭 <span>Tea farm</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">제조 과정 <span>Manufacturing process</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">맛있는 차 이야기 <span>Tea story</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">우미차 발자취 <span>Woomi's journey</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">제품</a>
+                            <ul class="submenu inner_submenu">
+                                <li>
+                                    <p class="submenu_tit">차 Tea</p>
+                                    <a href="#">녹차 <span>Green tea</span></a>
+                                    <a href="#">발효차 <span>Furmented tea</span></a>
+                                    <a href="#">혼합차 <span>Blended tea</span></a>
+                                    <a href="#">과일차 <span>Fruit tea</span></a>
+                                    <a href="#">채소차 <span>Vegetable tea</span></a>
+                                </li>
+                                <li>
+                                    <p class="submenu_tit">차도구 Tea ware</p>
+                                    <a href="#">찻주전자 <span>Tea pot</span></a>
+                                    <a href="#">찻잔 <span>Tea cup</span></a>
+                                    <a href="#">말차도구 <span>Matcha tools</span></a>
+                                    <a href="#">차거름망 <span>Tea strainer</span></a>
+                                    <a href="#">다도세트 <span>Tea ceremony set</span></a>
+                                </li>
+                                <li>
+                                    <p class="submenu_tit">디저트 Desert</p>
+                                    <a href="#">디저트 <span>Desert</span></a>
+                                </li>
+                                <li>
+                                    <p class="submenu_tit">소식지 Megazine</p>
+                                    <a href="#">잡지 <span>Megazine</span></a>
+                                    <a href="#">우미편지 <span>Tea letter</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="right_gnb">
+                        <li>
+                            <a href="#">이벤트</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">진행중인 이벤트 <span>Event</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">우림법 <span>Recipe</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">서비스</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">묻고 답하기 <span>QnA</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">지도 <span>Map</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">사업문의 <span>Contact us</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <!--banner-->
+        <div id="banner">
+            <!-- Swiper -->
+            <div id="slide">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/main/banner/banner1.jpg" alt="banner1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main/banner/banner2.jpg" alt="banner2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main/banner/banner3.jpg" alt="banner3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main/banner/banner4.jpg" alt="banner4">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- Banner Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+            <!-- Banner Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    loop: true,//반복
+                    loopAdditionalSlides: 1,
+                    spaceBetween: 0,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+        </div>
+
+        <!--section1-->
+        <div id="section1">
+            <div class="sec1_top">
+                <div class="tit_area">
+                    <p class="title">차 둘러보기</p>
+                    <p class="more">
+                        <a href="#">
+                            모두 보러가기
+                            <img src="images/main/etc/arrow_btn1.png" alt="arrow_btn1">
+                        </a>
+                    </p>
+                </div>
+                <div class="item_tap">
+                    <p class="item_on best_on">
+                        최고 인기<span>&#47;Best</span>
+                    </p>
+                    <p class="weekly_on">
+                        이번주 인기<span>&#47;Weekly</span>
+                    </p>
+                </div>
+            </div>
+            <div id="item_list">
+                <!-- Swiper -->
+                    <div class="swiper2 mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item_wrap">
+                                    <a href="#">
+                                        <img src="images/main/section1/young_tb.png" alt="young_tb">
+                                    </a>
+                                    <p>어린잎 녹차 &#40;10개입&#41;</p>
+                                    <p>12,000원</p>
+                                    <a href="#">
+                                        <img src="images/main/section1/oolong_tb.png" alt="oolong_tb">
+                                    </a>
+                                    <p>우롱차 &#40;10개입&#41;</p>
+                                    <p>12,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_wrap">
+                                    <a href="#">
+                                        <img src="images/main/section1/hoji_pk.png" alt="hoji_pk">
+                                    </a>
+                                    <p>호지차 &#40;50g&#41;</p>
+                                    <p>8,000원</p>
+                                    <a href="#">
+                                        <img src="images/main/section1/sejak-cyl.png" alt="sejak-cyl">
+                                    </a>
+                                    <p>세작 &#40;80g&#41;</p>
+                                    <p>24,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_wrap">
+                                    <a href="#">
+                                        <img src="images/main/section1/matcha_pk.png" alt="matcha_pk">
+                                    </a>
+                                    <p>어린잎 말차 &#40;50g&#41;</p>
+                                    <p>8,000원</p>
+                                    <a href="#">
+                                        <img src="images/main/section1/middle_tb.png" alt="middle_tb">
+                                    </a>
+                                    <p>중작 &#40;10개입&#41;</p>
+                                    <p>20,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_wrap">
+                                    <a href="#">
+                                        <img src="images/main/section1/corn_cyl.png" alt="corn_cyl">
+                                    </a>
+                                    <p>옥수수차 &#40;80g&#41;</p>
+                                    <p>14,000원</p>
+                                    <a href="#">
+                                        <img src="images/main/section1/jasmin_pk.png" alt="jasmin_pk">
+                                    </a>
+                                    <p>자스민 녹차 &#40;50g&#41;</p>
+                                    <p>10,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_wrap">
+                                    <a href="#">
+                                        <img src="images/main/section1/ssuk_cyl.png" alt="ssuk_cyl">
+                                    </a>
+                                    <p>쑥차 &#40;80g&#41;</p>
+                                    <p>12,000원</p>
+                                    <a href="#">
+                                        <img src="images/main/section1/green_tea_spread.png" alt="green_tea_spread">
+                                    </a>
+                                    <p>녹차 스프레드 &#40;300g&#41;</p>
+                                    <p>12,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_wrap">
+                                    <a href="#">
+                                        <img src="images/main/section1/lemon_pk.png" alt="lemon_pk">
+                                    </a>
+                                    <p>레몬차 &#40;50g&#41;</p>
+                                    <p>10,000원</p>
+                                    <a href="#">
+                                        <img src="images/main/section1/black_tb.png" alt="black_tb">
+                                    </a>
+                                    <p>홍차 &#40;10개입&#41;</p>
+                                    <p>12,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item_wrap">
+                                    <a href="#">
+                                        <img src="images/main/section1/woomi_chocolate.png" alt="woomi_chocolate">
+                                    </a>
+                                    <p>녹차 초콜릿 &#40;10개입&#41;</p>
+                                    <p>8,000원</p>
+                                    <a href="#">
+                                        <img src="images/main/section1/tea_coaster.png" alt="tea_coaster">
+                                    </a>
+                                    <p>티코스터</p>
+                                    <p>2,000원</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+            <!--Item Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+            <!--Item Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper2", {
+                    slidesPerView: 3,
+                    spaceBetween: 130,
+                    centeredSlides: true,
+                    loop: true,
+                    autoplay: {
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    }
+                    // navigation: {
+                    //     nextEl: ".swiper-button-next",
+                    //     prevEl: ".swiper-button-prev",
+                    // },
+                });
+            </script>
+        </div>
+        <!--section2-->
+        <div id="section2">
+            <div class="choose_tea">
+                <p class="title">나에게 맞는 차를 골라보세요.</p>
+                <div class="tea_color">
+                    <div class="sejak">
+                        <a href="#">
+                            <p class="name_bar">세작</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/sejak.png" alt="sejak">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="under young">
+                        <a href="#">
+                            <p class="name_bar">어린잎 녹차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/young.png" alt="young">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="middle">
+                        <a href="#">
+                            <p class="name_bar">중작</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/sejak.png" alt="sejak">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="under matcha">
+                        <a href="#">
+                            <p class="name_bar">말차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/matcha.png" alt="matcha">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="jasmin">
+                        <a href="#">
+                            <p class="name_bar">자스민 녹차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/jasmin.png" alt="jasmin">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="under hoji">
+                        <a href="#">
+                            <p class="name_bar">호지차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/hoji.png" alt="hoji">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="oolong">
+                        <a href="#">
+                            <p class="name_bar">우롱차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/oolong.png" alt="oolong">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="under black">
+                        <a href="#">
+                            <p class="name_bar">홍차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/black.png" alt="black">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pumkin">
+                        <a href="#">
+                            <p class="name_bar">단호박차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/pumkin.png" alt="pumkin">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="under corn">
+                        <a href="#">
+                            <p class="name_bar">옥수수차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/corn.png" alt="corn">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ssuk">
+                        <a href="#">
+                            <p class="name_bar">쑥차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/ssuk.png" alt="ssuk">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="under lemon">
+                        <a href="#">
+                            <p class="name_bar">레몬차</p>
+                            <div class="tea_wrap">
+                                <img src="images/main/section2/lemon.png" alt="lemon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--section3-->
+        <div id="section3">
+            <div class="left_event">
+                <a href="#">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="sale_wrap">
+                            <img src="images/main/section3/sale_item.jpg" alt="sale_item">
+                            <div class="sale_tx">
+                                <p id="sale_timer">
+                                    남은 시간 00:00:00
+                                </p>
+                                <p class="title">오늘까지만 할인!</p>
+                                <p class="title">호지차 50g</p>
+                                <p><em>8,000원</em><b>6,000원</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="right_event">
+                <a href="#">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="coupon_wrap">
+                            <img src="images/main/section3/coupon.jpg" alt="coupon">
+                            <div class="coupon_tx">
+                                <p class="title">이번달 쿠폰</p>
+                                <p class="sub_tit">
+                                    9월에 제공하는 각종 쿠폰 받으러 가기!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                        <div class="event_wrap">
+                            <img src="images/main/section3/event.jpg" alt="event">
+                            <div class="event_tx">
+                                <p class="title">진행중인 이벤트</p>
+                                <p class="sub_tit">우미차에서 진행하는 이벤트 놓치지 마세요!</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--section4-->
+        <div id="section4">
+            <div class="inner_section4">
+                <h1>
+                    '우미優美'는 우아하고 아름답다는 의미입니다.
+                    <br>우미차는 정직한 차를 만들기 위해 노력합니다.
+                </h1>
+                <p>
+                    동양에서 시작해 전 세계로 나아간 차 茶.
+                    <br>오직 한국에서만 즐기실 수 있는 녹차를 비롯해
+                    <br>여러가지 차를 정성을 다해 만듭니다.
+                    <br>우미차는 녹차,발효차,혼합차,과일차,채소차를 만들고 있습니다.
+                    <br>우미차와 함께 여러가지 차와 차 문화를 즐겨주세요.
+                </p>
+                <ul class="go_tap">
+                    <li>
+                        <a href="#">
+                            차 보러가기
+                            <img src="images/main/etc/arrow_btn2.png" alt="arrow_btn2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            제조 과정 보러가기
+                            <img src="images/main/etc/arrow_btn2.png" alt="arrow_btn2">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--section5-->
+        <div id="section5">
+            <p class="title">함께 구매하면 좋은 제품</p>
+            <div data-aos="fade-down" data-aos-duration="1000">
+                <ul class="together">
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/green_spread.jpg" alt="green_spread">
+                            </div>
+                            <p>녹차 스프레드</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/green_chocolate.jpg" alt="green_chocolate">
+                            </div>
+                            <p>녹차 초콜릿</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/tea_coster.jpg" alt="tea_coster">
+                            </div>
+                            <p>티 코스터</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/tea_pot.jpg" alt="tea_pot">
+                            </div>
+                            <p>찻주전자</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/tea_cup.jpg" alt="tea_cup">
+                            </div>
+                            <p>찻잔</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <ul class="together together2">
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/matcha_tools.jpg" alt="matcha_tools">
+                            </div>
+                            <p>말차 도구</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/tea_strainer.jpg" alt="tea_strainer">
+                            </div>
+                            <p>차거름망</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/ceremony_set.jpg" alt="ceremony_set">
+                            </div>
+                            <p>다도세트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/tea_pot.jpg" alt="tea_pot">
+                            </div>
+                            <p>잡지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="get_img_wrap">
+                                <img src="images/main/section5/tea_cup.jpg" alt="tea_cup">
+                            </div>
+                            <p>티레터</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--section6-->
+        <div id="section6">
+            <a href="#">
+                <div class="inner_section6">
+                    <p class="title">기업 및 단체주문</p>
+                    <p class="sub_tit">대량 구매 전용 서비스와 프로모션을 제공합니다.</p>
+                    <p class="go_tap group_tap">
+                        대량 주문하러 가기
+                        <img src="images/main/etc/arrow_btn2.png" alt="arrow_btn2">
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!--section7-->
+        <div id="section7">
+            <p class="title">차 레시피 공유</p>
+            <div class="sub_area">
+                <p class="sub_tit">가장 많이 선호받은 차 레시피를 소개합니다.</p>
+                <p class="more recipe_more">
+                    <a href="#">
+                        더 구경하기
+                        <img src="images/main/etc/arrow_btn1.png" alt="arrow_btn1">
+                    </a>
+                </p>
+            </div>
+            <div class="recipe_wrap">
+                <div class="re_collection">
+                    <div class="inner_left">
+                        <div class="recipe1 recipe">
+                            <div class="re_img_wrap">
+                                <img src="images/main/section7/recipe1.png" alt="recipe1">
+                            </div>
+                            <div class="cover">
+                                <p>
+                                    <span>#깊은말차맛 #쌉싸름</span>
+                                    <br>간단한 재료만 있으면 준비 끝!
+                                    <br>일본 전통 방식 말차 만들기
+                                </p>
+                                <a href="#">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_right">
+                        <div class="recipe2 recipe">
+                            <div class="re_img_wrap">
+                                <img src="images/main/section7/recipe2.png" alt="recipe2">
+                                <div class="cover">
+                                    <p>
+                                        <span>#그을린향</span>
+                                        <br>유럽 방식으로 홍차 만들기
+                                    </p>
+                                    <a href="#">더보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe3 recipe">
+                            <div class="re_img_wrap">
+                                <img src="images/main/section7/recipe3.png" alt="recipe3">
+                            </div>
+                            <div class="cover">
+                                <p>
+                                    <span>#전통다도</span>
+                                    <br>전통방식으로 다도 즐기기
+                                </p>
+                                <a href="#">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="re_collection2">
+                    <div class="inner_left">
+                        <div class="recipe4 recipe">
+                            <div class="re_img_wrap">
+                                <img src="images/main/section7/recipe4.png" alt="recipe4">
+                            </div>
+                            <div class="cover">
+                                <p>
+                                    <span>#쌉쌀 #달콤 #녹진</span>
+                                    <br>카페 부럽지 않은 말차라떼
+                                    <br>집에서 만들어 먹기
+                                </p>
+                                <a href="#">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_right">
+                        <div class="recipe5 recipe">
+                            <div class="re_img_wrap">
+                                <img src="images/main/section7/recipe5.png" alt="recipe5">
+                            </div>
+                            <div class="cover">
+                                <p>
+                                    <span>#바삭바삭</span>
+                                    <br>오븐 없이 녹차 쿠키
+                                </p>
+                                <a href="#">더보기</a>
+                            </div>
+                        </div>
+                        <div class="recipe6 recipe">
+                            <div class="re_img_wrap">
+                                <img src="images/main/section7/recipe6.png" alt="recipe6">
+                            </div>
+                            <div class="cover">
+                                <p>
+                                    <span>#폭신폭신</span>
+                                    <br>녹차 롤케이크
+                                </p>
+                                <a href="#">더보기</a>
+                            </div>
+                        </div>
+                        <div class="recipe7 recipe">
+                            <div class="re_img_wrap">
+                                <img src="images/main/section7/recipe7.png" alt="recipe7">
+                            </div>
+                            <div class="cover">
+                                <p>
+                                    <span>#달달 #피로가날아간다</span>
+                                    <br>농후하고 고소한 맛이 특징!
+                                    <br>부드러운 밀크티 만들기
+                                </p>
+                                <a href="#">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <ul class="inner_footer">
+                <li class="foot1">
+                    <div>
+                        <img src="images/header&footer/logo.png" alt="logo">
+                    </div>
+                </li>
+                <li class="foot2">
+                    <p>
+                        <a href="#">회사소개</a>
+                    </p>
+                    <p>
+                        <a href="#">제휴/제안</a>
+                    </p>
+                    <p>
+                        <a href="#">고객센터</a>
+                    </p>
+                    <p>
+                        <a href="#">개인정보처리방침</a>
+                    </p>
+                    <p>
+                        <a href="#">이메일무단수집거부</a>
+                    </p>
+                    <p>
+                        <a href="#">사이트맵</a>
+                    </p>
+                </li>
+                <li class="foot3">
+                    <p>고객센터 <span>051-000-0000</span></p>
+                    <p>운영시간 : 월,화,수,금 오전9시~오후6시</p>
+                    <p>점심시간 : 낮12시~오후1시</p>
+                    <p>휴일 : 목요일 및 주말, 공휴일</p>
+                    <p class="address">주소 : 부산광역시 부산 중구 남포동</p>
+                    <p>사업자등록번호 000-00-00000</p>
+                    <a href="#">사업자 정보확인</a>
+                </li>
+                <li class="foot4">
+                    <p>이메일이나 휴대전화 번호를 남겨주세요.</p>
+                    <p>각종 소식을 전해드리겠습니다.</p>
+                    <div class="input_wrap">
+                        <form action="">
+                            <input type="text" class="text" placeholder="연락처를 입력해주세요.">
+                        </form>
+                    </div>
+                    <div class="confetti_wrap">
+                        <button class="confetti">제출하기</button>
+                    </div>
+                    <div class="sns">
+                        <p>
+                            <a href="#">카카오톡 ID : woomichamall</a>
+                        </p>
+                        <p>
+                            <a href="#">유튜브 : woomicha</a>
+                        </p>
+                        <p>
+                            <a href="#">인스타그램 : woomicha</a>
+                        </p>
+
+                    </div>
+                </li>
+            </ul>
+            <p class="copy_right">All Rights Reserved</p>
+        </footer>
+    </div>
+    <!--js-->
+    <script src="js/main_style.js"></script>
+</body>
+
+</html>
