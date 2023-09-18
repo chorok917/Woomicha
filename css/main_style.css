@@ -134,12 +134,6 @@ header {
     width: 100%;
 }
 
-.top_right .ham_btn {
-    margin-left: 30px;
-    margin-right: 0;
-    width: 23px;
-}
-
 /*logo*/
 .logo {
     position: absolute;
