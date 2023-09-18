@@ -857,6 +857,7 @@ input {
     border: none;
     display: inline-block;
     padding: 6px 20px 6px 6px;
+    outline: none;
 }
 
 .confetti_wrap {
