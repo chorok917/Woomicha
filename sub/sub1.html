@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <title>우미차 優美茶 Graceful Tea</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/header&footer/favicon.png">
+    <!--webfont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/sub1.css">
+    <!--js sorce-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!--confetti-->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!--top_btn-->
+        <a href="#banner">
+            <div class="top_btn">
+                <img src="../images/header&footer/top_btn.png" alt="top_btn">
+            </div>
+        </a>
+        <!--header-->
+        <div class="header_fixed">
+            <header>
+                <div class="top">
+                    <div class="top_left">
+                        <a href="#">English</a>
+                        <a href="#">사업문의</a>
+                    </div>
+                    <div class="top_right">
+                        <div class="icon_wrap">
+                            <a href="#">
+                                <img src="../images/header&footer/search_icon.png" alt="search_icon">
+                            </a>
+                        </div>
+                        <div class="icon_wrap">
+                            <a href="#">
+                                <img src="../images/header&footer/cart_icon.png" alt="cart_icon">
+                            </a>
+                        </div>
+                        <div class="icon_wrap">
+                            <a href="#">
+                                <img src="../images/header&footer/login_icon.png" alt="login_icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="logo">
+                    <a href="../index.html">
+                        <img src="../images/header&footer/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <div class="gnb">
+                    <ul class="left_gnb">
+                        <li>
+                            <a href="#">브랜드</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#sub1_sec1">우미차에 대해 <span>About</span></a>
+                                </li>
+                                <li>
+                                    <a href="#sub1_sec2">우미네 차밭 <span>Tea farm</span></a>
+                                </li>
+                                <li>
+                                    <a href="#sub1_sec3">제조 과정 <span>Manufacturing process</span></a>
+                                </li>
+                                <li>
+                                    <a href="#sub1_sec4">맛있는 차 이야기 <span>Tea story</span></a>
+                                </li>
+                                <li>
+                                    <a href="#sub1_sec5">우미차 발자취 <span>Woomi's journey</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./sub2.html">제품</a>
+                            <ul class="submenu inner_submenu">
+                                <li>
+                                    <p class="submenu_tit">차 Tea</p>
+                                    <a href="#">녹차 <span>Green tea</span></a>
+                                    <a href="#">발효차 <span>Fermented tea</span></a>
+                                    <a href="#">혼합차 <span>Blended tea</span></a>
+                                    <a href="#">과일차 <span>Fruit tea</span></a>
+                                    <a href="#">채소차 <span>Vegetable tea</span></a>
+                                </li>
+                                <li>
+                                    <p class="submenu_tit">차도구 Tea ware</p>
+                                    <a href="#">찻주전자 <span>Tea pot</span></a>
+                                    <a href="#">찻잔 <span>Tea cup</span></a>
+                                    <a href="#">말차도구 <span>Matcha tools</span></a>
+                                    <a href="#">차거름망 <span>Tea strainer</span></a>
+                                    <a href="#">다도세트 <span>Tea ceremony set</span></a>
+                                </li>
+                                <li>
+                                    <p class="submenu_tit">디저트 Desert</p>
+                                    <a href="#">디저트 <span>Desert</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="right_gnb">
+                        <li>
+                            <a href="./sub3.html">이벤트</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./sub3.html">이벤트 <span>Event</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./sub4.html">서비스</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">자주 묻는 질문 <span>FAQ</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">문의사항 <span>Question</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">사업문의 <span>Contact us</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">지도 <span>Map</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <!--banner-->
+        <div id="banner">
+            <p>브랜드/Brand</p>
+        </div>
+        <!--container-->
+        <div id="container">
+            <!--lnb-->
+            <ul class="lnb">
+                <li>차례 <img src="../images/sub1/leaf.png" alt="leaf_img" class="lnb_leaf"></li>
+                <li>
+                    <a href="#sub1_sec1">우미차에 대해 <span>About woomicha</span></a>
+                </li>
+                <li>
+                    <a href="#sub1_sec2">우미네 차밭 <span>tea farm</span></a>
+                </li>
+                <li>
+                    <a href="#sub1_sec3">제조 과정 <span>Manufacturing process</span></a>
+                </li>
+                <li>
+                    <a href="#sub1_sec4">맛있는 차 이야기 <span>Tea story</span></a>
+                </li>
+                <li>
+                    <a href="#sub1_sec5">우미차 발자취 <span>About woomicha</span></a>
+                </li>
+            </ul>
+            <!--sec1-->
+            <div id="sub1_sec1">
+                <div class="leaf_img">
+                    <img src="../images/sub1/leaf.png" alt="leaf_img">
+                </div>
+                <p class="sub1_tit">우미차에 대해</p>
+                <p>About Woomicha</p>
+                <p class="explain">우미차는 넉넉할 우 優, 아름다울 미 美, 차 차 茶를 사용하여 우아하고 아름다운 차라는 의미입니다.
+                    <br>2007년에 설립한 우미차는 한국만이 가진 특색있는 차를 만들어 널리 알리고 싶다는 마음 하나를 변치 않고 있습니다.
+                </p>
+                <ul class="abt">
+                    <li>
+                        <div class="abt_img_wrap">
+                            <img src="../images/sub1/about1.jpg" alt="about1">
+                        </div>
+                        <div class="abt_cover">
+                            <b>추구 원칙 01</b>
+                            <p class="cover_tit">자연과 함께</p>
+                            <p>
+                                우미차는 재배,제조,배송
+                                <br>과정에서 환경을 생각합니다.
+                                <br>
+                                <br>대량 생산과 배송을 하면 불가피하게
+                                <br>쓰레기가 많이 나옵니다.
+                                <br>
+                                <br>우미차는 환경오염을 줄이기 위해
+                                <br>쓰레기를 최소화하며,
+                                <br>재활용 가능한 친환경 소재만 사용합니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="abt_img_wrap">
+                            <img src="../images/sub1/about2.jpg" alt="about2">
+                        </div>
+                        <div class="abt_cover">
+                            <b>추구 원칙 02</b>
+                            <p class="cover_tit">건강과 함께</p>
+                            <p>
+                                우미차는 건강을 고집합니다.
+                                <br>
+                                <br>건강한 차만 선물하고 싶다는
+                                <br>마음에서 시작했습니다.
+                                <br>
+                                <br>창립할 때부터 단 한번도
+                                <br>농약을 사용하지 않았습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="abt_img_wrap">
+                            <img src="../images/sub1/about3.jpg" alt="about3">
+                        </div>
+                        <div class="abt_cover">
+                            <b>추구 원칙 03</b>
+                            <p class="cover_tit">고객과 함께</p>
+                            <p>
+                                우미차는 한국 차와 차 문화를
+                                <br>발전시키고 싶다는 목표가 있습니다.
+                                <br>
+                                <br>차를 발전시키기 위해
+                                <br>부지런히 움직이고 정직하게 만들어
+                                <br>고객분들께 최상의 차를 제공하겠습니다.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--sec2-->
+            <div id="sub1_sec2">
+                <div class="farm_tx">
+                    <p class="sub1_tit">우미네 차밭
+                        <img src="../images/sub1/leaf.png" alt="leaf_img">
+                    </p>
+                    <p>Woomi's tea farm</p>
+                    <p class="explain">
+                        우미차 차밭은
+                        <br>청정 제주에 있습니다.
+                        <br>약 50만평에 이르는
+                        <br>광활한 차밭입니다.
+                        <br>우미차에서 생산하는 모든 차는
+                        <br>수작업이기에 자부심이 있습니다.
+                        <br>
+                        <br>차는 자연으로부터 오는 음식입니다.
+                        <br>재배하는 지역과 기후에 따라
+                        <br>맛이 달라지는 특징이 있습니다.
+                        <br>자연과 가까운 제주에서 만드는
+                        <br>우미네 차는 차가 가진
+                        <br>본래 맛을 알 수 있습니다.
+                    </p>
+                    <a href="#" class="org">우미차가 받은 인증마크 확인하기</a>
+                </div>
+                <div class="farm_img_area">
+                    <figure>
+                        <img src="../images/sub1/tea_farm1.jpg" alt="tea_farm1" id="mainImg">
+                    </figure>
+                    <ul class="tea_farm_thumbs">
+                        <li>
+                            <img src="../images/sub1/tea_farm1.jpg" alt="tea_farm1" id="thumb1">
+                        </li>
+                        <li>
+                            <img src="../images/sub1/tea_farm2.jpg" alt="tea_farm2" id="thumb2">
+                        </li>
+                        <li>
+                            <img src="../images/sub1/tea_farm3.jpg" alt="tea_farm3" id="thumb3">
+                        </li>
+                        <li>
+                            <img src="../images/sub1/tea_farm4.jpg" alt="tea_farm4" id="thumb4">
+                        </li>
+                        <li>
+                            <img src="../images/sub1/tea_farm5.jpg" alt="tea_farm5" id="thumb5">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--sec3-->
+            <div id="sub1_sec3">
+                <div class="leaf_img">
+                    <img src="../images/sub1/leaf.png" alt="leaf_img">
+                </div>
+                <p class="sub1_tit">제조 과정</p>
+                <p>Manufacturing process</p>
+                <ul class="process">
+                    <li>
+                        <div data-aos="fade-up" data-aos-duration="3000">
+                            <div class="proc_img_wrap">
+                                <img src="../images/sub1/process1.jpg" alt="process1">
+                            </div>
+                            <p class="proc_tx">
+                                깨끗한 차 밭에서
+                                <br>손으로 찻잎을 수확합니다.
+                            </p>
+                            <p class="proc_no1 proc_no">1</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="fade-down" data-aos-duration="2000">
+                            <p class="proc_tx">
+                                350도에 달하는 높은 온도에서 수분이
+                                <br>날아가도록 재빠르게 여러번 덖습니다.
+                            </p>
+                            <div class="proc_img_wrap">
+                                <img src="../images/sub1/process2.jpg" alt="process2">
+                            </div>
+                            <p class="proc_no2 proc_no">2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="fade-up" data-aos-duration="3000">
+                            <div class="proc_img_wrap">
+                                <img src="../images/sub1/process3.jpg" alt="process3">
+                            </div>
+                            <p class="proc_tx">
+                                다음은 유념(비비기)과정입니다.
+                                <br>녹차를 비벼주어야 물에 넣었을 때
+                                <br>영양성분도 잘 우러나오고
+                                <br>보관도 용이합니다.
+                            </p>
+                            <p class="proc_no3 proc_no">3</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="fade-down" data-aos-duration="2000">
+                            <p class="proc_tx">
+                                수분이 완전히 날아갈 때까지 건조합니다.
+                                이후에 정성스레 포장하여 배송합니다.
+                            </p>
+                            <div class="proc_img_wrap">
+                                <img src="../images/sub1/process4.jpg" alt="process4">
+                            </div>
+                            <p class="proc_no4 proc_no">4</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--sec4-->
+            <div id="sub1_sec4">
+                <div class="tit_area">
+                    <div class="leaf_img">
+                        <img src="../images/sub1/leaf.png" alt="leaf_img">
+                    </div>
+                    <p class="sub1_tit">맛있는 차 이야기</p>
+                    <p>Tea story</p>
+                </div>
+                <ul class="story_list">
+                    <li>
+                        <p class="story1_tx">
+                            차나무는 '카멜리아 시넨시스'로,
+                            <br>세상에 단 한 종류 뿐입니다.
+                            <br>
+                            <br>차는 채엽시기와 발효정도에 따라
+                            <br>천차만별로 나뉩니다.
+                            <br>
+                            <br>녹차는 채엽시기에 따라
+                            <br>우전, 세작, 중작, 대작으로 크게 나뉩니다.
+                            <br>첫물차, 두물차, 세물차, 네물차라고
+                            <br>부르기도 합니다.
+                        </p>
+                    </li>
+                    <li class="story_img_area story1_img">
+                        <div class="story_img_wrap">
+                            <img src="../images/sub1/story1.jpg" alt="story1">
+                        </div>
+                        <div class="story_img_wrap">
+                            <img src="../images/sub1/story2.jpg" alt="story2">
+                        </div>
+                        <div class="story_img_wrap">
+                            <img src="../images/sub1/story3.jpg" alt="story3">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="story_list">
+                    <li>
+                        <div class="story_img_wrap">
+                            <img src="../images/sub1/story4.jpg" alt="story4">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="story2_tx">
+                            세작은 곡우와 입하 사이에 채엽한 잎입니다.
+                            <br>잎이 어리기 때문에 구수하고 부드럽습니다.
+                            <br>
+                            <br>중작은 5월~6월에 채엽한 찻잎으로 만듭니다.
+                            <br>
+                            <br>채엽시기가 늦을 수록 잎이 크고 풍미가 강합니다.
+                            <br>생산량이 많기 때문에 가격이 적당하고
+                            <br>비교적 맛이 진합니다.
+                        </p>
+                    </li>
+                </ul>
+                <div class="Paragraph_break">
+                    <img src="../images/sub1/leaf.png" alt="leaf_img">
+                    <img src="../images/sub1/leaf.png" alt="leaf_img">
+                    <img src="../images/sub1/leaf.png" alt="leaf_img">
+                </div>
+                <ul class="story_list">
+                    <li>
+                        <p class="story3_tx story3_tx1">
+                            호지차는 일본에서 만들었는데,
+                            볶은 녹차라는 뜻입니다.
+                            볶으면서 맛은 구수해지고
+                            녹차보다 카페인이 적어지는 게
+                            특징입니다.
+                            <br>
+                            <br>말차를 만들때는 빛을 차단하는
+                            차광재배 방식을 이용합니다.
+                            이를 가루로 만들면 말차가 완성됩니다.
+                            일반 녹차보다 엽록소가 많아
+                            짙은 녹색을 띄고 깊은 맛이 나며
+                            쓰고 떫은 맛도 덜합니다.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="story_img_wrap">
+                            <img src="../images/sub1/story5.jpg" alt="story5">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="story3_tx">
+                            녹차 발효정도에 따라
+                            우롱차와 홍차로 나뉩니다.
+                            발효정도가 중간이면 우롱차,
+                            가장 많이 발효한 것이 홍차입니다.
+                            <br>
+                            <br>수색으로 분류했을 때
+                            백차-황차-녹차-청차-홍차-흑차
+                            정도가 됩니다.
+                            청차는 우롱차, 흑차는 보이차입니다.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="story_img_wrap">
+                            <img src="../images/sub1/story6.jpg" alt="story6">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="story_list">
+                    <li class="story_img_area story4_img">
+                        <div class="story_img_wrap">
+                            <img src="../images/sub1/story7.jpg" alt="story7">
+                        </div>
+                        <div class="story_img_wrap">
+                            <img src="../images/sub1/story8.jpg" alt="story8">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="story4_tx">
+                            녹차 맛과 향이 힘드신 분들은
+                            <br>블렌디드 티 혹은 과일이나 채소차를 추천합니다.
+                            <br>
+                            <br>우미차는 자스민을 블렌디드한 
+                            <br>녹차를 판매하고 있습니다.
+                            <br>과일류는 레몬차가 있습니다.
+                            <br>곡물류는 단호박차,쑥차,옥수수차가 있습니다.
+                            <br>
+                            <br>차를 우리는 방법은 정해져 있지 않습니다.
+                            <br>자신에게 맞는 방법과 차를 고르는 것이
+                            <br>가장 좋은 방법입니다.
+                        </p>
+                    </li>
+                </ul>
+                <p class="shop_btn">
+                    <a href="./sub2.html">차 구매하러 가기</a>
+                    <a href="./sub2.html">차도구 보러가기</a>
+                </p>
+            </div>
+            <!--sec5-->
+            <div id="sub1_sec5">
+                <div class="tit_area">
+                    <div class="leaf_img">
+                        <img src="../images/sub1/leaf.png" alt="leaf_img">
+                    </div>
+                    <p class="sub1_tit">우미차 발자취</p>
+                    <p>Woomi's journey</p>
+                </div>
+                <div id="main-slider_wrap">
+                    <div class="main-slider">
+                        <div class="item item-1">
+                            <img src="../images/sub1/journey1.jpg" alt="journey1">
+                            <div class="jour_tx">
+                                <p>2010년 유기농 인증</p>
+                                <p>
+                                    설립 이래 단 한번도 농약을 치지 않아
+                                    <br>2010년도에 유기농 인증을 받았으며,
+                                    <br>꾸준히 재검사를 받고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item item-2">
+                            <img src="../images/sub1/journey2.jpg" alt="journey2">
+                            <div class="jour_tx">
+                                <p>2011년 국내 소비자 만족도 1위 달성</p>
+                                <p>
+                                    많은 성원에 힘 입어 국내 소비자 만족도
+                                    <br>1위를 달성하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item item-3">
+                            <img src="../images/sub1/journey3.jpg" alt="journey3">
+                            <div class="jour_tx">
+                                <p>2013년 도자기 장인 3인과 협약</p>
+                                <p>
+                                    한국 차 문화를 성장시키기 위해
+                                    <br>도자기 장인 3명과 협약을 맺어
+                                    <br>안전한 도자기를 판매하고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item item-4">
+                            <img src="../images/sub1/journey4.jpg" alt="journey4">
+                            <div class="jour_tx">
+                                <p>2017년 다원 개방</p>
+                                <p>
+                                    고객분들과 더욱 가까워지기 위해
+                                    <br>다원을 개방하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item item-5">
+                            <img src="../images/sub1/journey5.jpg" alt="journey5">
+                            <div class="jour_tx">
+                                <p>2024년 말차 출시, 세작 재출시</p>
+                                <p>
+                                    말차를 출시하고,
+                                    <br>세작 품질을 높여 재출시 하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--sec6-->
+            <div id="sub1_sec6">
+                <div data-aos="zoom-out" data-aos-duration="2000">
+                    <p class="rest">"우미차에서 조금 더 쉬었다 가는 건 어떠세요?"</p>
+                    <p class="shop_btn">
+                        <a href="./sub2.html">모든 제품 보러가기</a>
+                        <a href="./sub3.html">이벤트 보러가기</a>
+                        <a href="./sub2.html">할인 제품 보러가기</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <ul class="inner_footer">
+            <li class="foot1">
+                <div>
+                    <img src="../images/header&footer/logo.png" alt="logo">
+                </div>
+            </li>
+            <li class="foot2">
+                <p>
+                    <a href="#">회사소개</a>
+                </p>
+                <p>
+                    <a href="#">제휴/제안</a>
+                </p>
+                <p>
+                    <a href="#">고객센터</a>
+                </p>
+                <p>
+                    <a href="#">개인정보처리방침</a>
+                </p>
+                <p>
+                    <a href="#">이메일무단수집거부</a>
+                </p>
+                <p>
+                    <a href="#">사이트맵</a>
+                </p>
+            </li>
+            <li class="foot3">
+                <p>고객센터 <span>080-000-0000</span></p>
+                <p>운영시간 : 월,화,수,금 오전9시~오후6시</p>
+                <p>점심시간 : 낮12시~오후1시</p>
+                <p>휴일 : 목요일 및 주말, 공휴일</p>
+                <p class="address">주소 : 부산광역시 부산 중구 남포동</p>
+                <p>사업자등록번호 000-00-00000</p>
+                <a href="#">사업자 정보확인</a>
+            </li>
+            <li class="foot4">
+                <p>이메일이나 휴대전화 번호를 남겨주세요.</p>
+                <p>각종 소식을 전해드리겠습니다.</p>
+                <div class="input_wrap">
+                    <form action="">
+                        <input type="text" class="text" placeholder="연락처를 입력해주세요.">
+                    </form>
+                </div>
+                <div class="confetti_wrap">
+                    <button class="confetti">제출하기</button>
+                </div>
+                <div class="sns">
+                    <p>
+                        <a href="#">카카오톡 ID : woomichamall</a>
+                    </p>
+                    <p>
+                        <a href="#">유튜브 : woomicha</a>
+                    </p>
+                    <p>
+                        <a href="#">인스타그램 : woomicha</a>
+                    </p>
+
+                </div>
+            </li>
+        </ul>
+        <p class="copyright"> Copyright 2023. Woomicha All Rights Reserved.</p>
+    </footer>
+    </div>
+    <!--js-->
+    <script src="../js/sub1.js"></script>
+</body>
+
+</html>
