@@ -111,12 +111,13 @@ header {
     border-radius: 0px 0px 16px 16px;
     padding: 0 14px 4px 14px;
     margin-right: 14px;
-    height: 20px;
 }
 
 .top_left a:hover {
     background-color: #679267;
     color: #fff;
+    padding-top: 10px;
+    transition: all .3s;
 }
 
 .top_right {
@@ -264,8 +265,7 @@ header {
 #banner {
     background-image: url(../images/sub4/sub4_banner.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     height: 420px;
     padding-top: 90px;
     color: #fff;
@@ -291,39 +291,52 @@ header {
     margin: 0 auto;
 }
 
-.lnb {
+.lnb{
     position: fixed;
     top: 600px;
     left: 30px;
+    z-index: 99;
 }
-
-.lnb li a {
+.lnb li a{
     border: 1px solid #679267;
     border-radius: 30px;
     padding: 0 6px;
     margin: 5px 0;
     display: inline-block;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #ffffff7d;
 }
-
-.lnb li a:hover {
-    background-color: rgba(118, 184, 148, 0.5);
+.lnb li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #387734;
+    transition: all .5s;
+    z-index: -1;
+    border-radius: 30px;
 }
-
-.lnb li a span {
+.lnb li a:hover{
+    color: #fff;
+}
+.lnb li a:hover::before{
+    transform: translateX(100%);
+}
+.lnb li a span{
     font-size: 12px;
 }
-
-.lnb_scroll {
+.lnb_leaf{
+    width: 20px;
+}
+.lnb_scroll{
     top: 200px;
     transition: .7s;
 }
 
-.lnb_leaf {
-    width: 20px;
-}
-
 /*sec1*/
-
 #sub4_sec1 {
     padding: 20px;
     margin: 80px 0;
@@ -340,7 +353,9 @@ header {
 }
 
 /*section1*/
+
 /*js제어*/
+
 #section1 {
     width: 1020px;
     margin: 0 auto;
@@ -461,11 +476,7 @@ header {
 }
 
 /*sec2*/
-.sec23_wrap {
-    background: url(../images/sub4/color_bg.jpg) no-repeat center;
-}
-
-.form_wrap {
+.form_wrap{
     width: 1025px;
     margin: 10px auto;
     height: 500px;
@@ -474,23 +485,17 @@ header {
     padding: 20px;
     box-sizing: border-box;
 }
-
 .form {
     padding-left: 155px;
 }
-
-.form li {
+.form li{
     float: left;
     margin: 0 20px 10px 0;
 }
-
-.form li form {
+.form li form{
     margin-bottom: 10px;
 }
-
-.name,
-.email,
-.file {
+.name, .email, .file{
     border-radius: 30px;
     width: 300px;
     height: 20px;
@@ -498,7 +503,7 @@ header {
     padding: 5px 10px;
 }
 
-#purpose {
+#purpose{
     outline: none;
     border: none;
     width: 324px;
@@ -507,25 +512,21 @@ header {
     border-radius: 14px;
     padding: 5px 10px;
 }
-
-#question {
+#question{
     outline: none;
     padding: 10px;
     resize: none;
 }
-
-.privacy {
+.privacy{
     float: left;
     margin: 10px 0 0 60px;
 }
-
-.privacy:hover {
+.privacy:hover{
     color: #1581a2;
     font-weight: bold;
     text-decoration: underline;
 }
-
-.submint {
+.submint{
     background-color: #B47B49;
     border-radius: 30px;
     color: #fff;
@@ -542,10 +543,6 @@ header {
     text-align: center;
     height: 505px;
     margin: 80px 0;
-}
-
-.busin_tit {
-    color: #fff;
 }
 
 .busin {
@@ -569,11 +566,9 @@ header {
     color: #fff;
     margin-top: 80px;
 }
-
-.busin li:nth-child(5) {
+.busin li:nth-child(5){
     margin-right: 0;
 }
-
 .busin p {
     padding: 20px 0;
 }
