@@ -111,12 +111,13 @@ header {
     border-radius: 0px 0px 16px 16px;
     padding: 0 14px 4px 14px;
     margin-right: 14px;
-    height: 20px;
 }
 
 .top_left a:hover {
     background-color: #679267;
     color: #fff;
+    padding-top: 10px;
+    transition: all .3s;
 }
 
 .top_right {
@@ -264,8 +265,7 @@ header {
 #banner {
     background-image: url(../images/sub1/sub1_banner.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     height: 420px;
     padding-top: 90px;
     color: #fff;
@@ -294,6 +294,7 @@ header {
     position: fixed;
     top: 600px;
     left: 30px;
+    z-index: 99;
 }
 .lnb li a{
     border: 1px solid #679267;
@@ -301,19 +302,37 @@ header {
     padding: 0 6px;
     margin: 5px 0;
     display: inline-block;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #ffffff7d;
+}
+.lnb li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #387734;
+    transition: all .5s;
+    z-index: -1;
+    border-radius: 30px;
 }
 .lnb li a:hover{
-    background-color: rgba(118, 184, 148, 0.5);
+    color: #fff;
+}
+.lnb li a:hover::before{
+    transform: translateX(100%);
 }
 .lnb li a span{
     font-size: 12px;
 }
+.lnb_leaf{
+    width: 20px;
+}
 .lnb_scroll{
     top: 200px;
     transition: .7s;
-}
-.lnb_leaf{
-    width: 20px;
 }
 
 /*sec1*/
