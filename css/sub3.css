@@ -104,12 +104,13 @@ header {
     border-radius: 0px 0px 16px 16px;
     padding: 0 14px 4px 14px;
     margin-right: 14px;
-    height: 20px;
 }
 
 .top_left a:hover {
     background-color: #679267;
     color: #fff;
+    padding-top: 10px;
+    transition: all .3s;
 }
 
 .top_right {
@@ -257,8 +258,7 @@ header {
 #banner {
     background-image: url(../images/sub3/sub3_banner.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     height: 420px;
     padding-top: 90px;
     color: #fff;
@@ -295,6 +295,7 @@ header {
 }
 .event li{
     float: left;
+    width: 630px;
     border: 2px solid #333;
     margin: 0 12px 12px 0;
 }
