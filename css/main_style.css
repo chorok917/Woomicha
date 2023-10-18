@@ -109,12 +109,13 @@ header {
     border-radius: 0px 0px 16px 16px;
     padding: 0 14px 4px 14px;
     margin-right: 14px;
-    height: 20px;
 }
 
 .top_left a:hover {
     background-color: #679267;
     color: #fff;
+    padding-top: 10px;
+    transition: all .3s;
 }
 
 .top_right {
@@ -494,17 +495,22 @@ header {
 }
 
 /*section3*/
+/* .sec3_wrap{
+    width: 1920px;
+    margin: 0 auto;
+} */
 #section3 {
-    width: 1320px;
+    width: 1360px;
     margin: 0 auto;
     height: 565px;
     padding: 80px 0;
     box-sizing: border-box;
 }
 .inner_section3{
-    width: 1280px;
+    width: 1320px;
     margin: 0 auto;
 }
+
 #section3 img {
     display: block;
 }
@@ -561,6 +567,11 @@ header {
     position: absolute;
     top: 70px;
     left: 20px;
+}
+
+.event_tx p{
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #f45959;
 }
 
 .right_event .event_wrap {
@@ -641,6 +652,7 @@ header {
 }
 
 .together li {
+    width: 200px;
     float: left;
     padding-right: 50px;
 }
@@ -763,15 +775,6 @@ header {
     overflow: hidden;
 }
 
-.recipe:hover .cover {
-    display: block;
-}
-
-.recipe:hover img {
-    transform: scale(1.2);
-    transition: transform .5s;
-}
-
 .cover {
     position: absolute;
     top: 0;
@@ -779,11 +782,48 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .4);
+    opacity: 0;
     color: #fff;
     text-align: center;
     box-sizing: border-box;
     padding-top: 37px;
-    display: none;
+}
+.cover_tx{
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.recipe img{
+    transition: transform .3s;
+}
+.cover a {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 4px 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.recipe:hover .cover {
+    opacity: 1;
+    transition: all .5s;
+}
+.recipe:hover .cover_tx{
+    transform: translateY(0px);
+    transition: transform .4s;
+    opacity: 1;
+}
+.recipe:hover img {
+    display: block;
+    transform: scale(1.2);
+    transition: transform .5s;
+}
+.recipe:hover .cover a{
+    transform: translateY(0px);
+    transition: transform .4s;
+    opacity: 1;
 }
 
 .recipe1 .cover,
@@ -795,15 +835,6 @@ header {
     font-size: 14px;
     font-weight: bold;
     font-style: italic;
-}
-
-.cover a {
-    display: inline-block;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 4px 40px;
-    font-size: 14px;
-    margin-top: 20px;
 }
 
 .cover a:hover {
