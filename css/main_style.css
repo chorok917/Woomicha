@@ -495,10 +495,9 @@ header {
 }
 
 /*section3*/
-/* .sec3_wrap{
-    width: 1920px;
+.sec3_wrap{
     margin: 0 auto;
-} */
+}
 #section3 {
     width: 1360px;
     margin: 0 auto;
