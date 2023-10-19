@@ -811,7 +811,7 @@ footer a:hover {
     margin: 6px 0;
 }
 
-input {
+.call {
     border: none;
     display: inline-block;
     padding: 6px 20px 6px 6px;
