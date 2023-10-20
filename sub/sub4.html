@@ -88,25 +88,28 @@
                         </li>
                         <li>
                             <a href="./sub2.html">제품</a>
-                            <ul class="submenu inner_submenu">
+                            <ul class="submenu">
                                 <li>
-                                    <p class="submenu_tit">차 Tea</p>
-                                    <a href="./sub2.html">녹차 <span>Green tea</span></a>
-                                    <a href="./sub2.html">발효차 <span>Fermented tea</span></a>
-                                    <a href="./sub2.html">혼합차 <span>Blended tea</span></a>
-                                    <a href="./sub2.html">과일차 <span>Fruit tea</span></a>
-                                    <a href="./sub2.html">채소차 <span>Vegetable tea</span></a>
+                                    <a href="./sub2.html">차 <span>Tea</span></a>
+                                    <ul class="inner_submenu">
+                                        <li><a href="./sub2.html">녹차 <span>Green</span></a></li>
+                                        <li><a href="./sub2.html">발효차 <span>Fermented</span></a></li>
+                                        <li><a href="./sub2.html">혼합차 <span>Blended</span></a></li>
+                                        <li><a href="./sub2.html">과일차 <span>Fruit</span></a></li>
+                                        <li><a href="./sub2.html">채소차 <span>Vegetable</span></a></li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <p class="submenu_tit">차도구 Tea ware</p>
-                                    <a href="./sub2.html">찻주전자 <span>Tea pot</span></a>
-                                    <a href="./sub2.html">찻잔 <span>Tea cup</span></a>
-                                    <a href="./sub2.html">말차도구 <span>Matcha tools</span></a>
-                                    <a href="./sub2.html">차거름망 <span>Tea strainer</span></a>
-                                    <a href="./sub2.html">다도세트 <span>Tea ceremony set</span></a>
+                                    <a href="./sub2.html">차도구 <span>Tea ware</span></a>
+                                    <ul class="inner_submenu">
+                                        <li><a href="./sub2.html">찻주전자 <span>Tea pot</span></a></li>
+                                        <li><a href="./sub2.html">찻잔 <span>Tea cup</span></a></li>
+                                        <li><a href="./sub2.html">말차도구 <span>Matcha tools</span></a></li>
+                                        <li><a href="./sub2.html">차거름망 <span>Tea strainer</span></a></li>
+                                        <li><a href="./sub2.html">다도세트 <span>Tea ceremony set</span></a></li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <p class="submenu_tit">디저트 Desert</p>
                                     <a href="./sub2.html">디저트 <span>Desert</span></a>
                                 </li>
                             </ul>
@@ -184,7 +187,7 @@
                                     <li class="font_18">
                                         <div class="noc_po">1. 다원은 어디에 위치해 있나요?</div>
                                     </li>
-                                    <li class="plus"><img src="../images/sub4/btn.png" alt="plus"></li>
+                                    <li class="faq_plus"><img src="../images/sub4/btn.png" alt="plus"></li>
                                 </ul>
                                 <div class="text_info">
                                     <p class="answer">A</p>
@@ -202,7 +205,7 @@
                                     <li class="font_18">
                                         <div class="noc_po">2. 주소를 잘못 기입했어요.</div>
                                     </li>
-                                    <li class="plus"><img src="../images/sub4/btn.png" alt="plus"></li>
+                                    <li class="faq_plus"><img src="../images/sub4/btn.png" alt="plus"></li>
                                 </ul>
                                 <div class="text_info">
                                     <p class="answer">A</p>
@@ -221,7 +224,7 @@
                                     <li class="font_18">
                                         <div class="noc_po">3. 유기농 인증 자료를 확인하고 싶어요.</div>
                                     </li>
-                                    <li class="plus"><img src="../images/sub4/btn.png" alt="plus"></li>
+                                    <li class="faq_plus"><img src="../images/sub4/btn.png" alt="plus"></li>
                                 </ul>
                                 <div class="text_info">
                                     <p class="answer">A</p>
@@ -236,7 +239,6 @@
                 </div> <!--section1 End-->
             </div>
 
-            <div class="sec23_wrap">
                 <!--sec2-->
                 <div id="sub4_sec2">
                     <div class="tit_area">
@@ -259,15 +261,18 @@
                                     <form action="#">
                                         <input type="file" class="file">
                                     </form>
-                                    <form action="#">
-                                        <select name="purpose" id="purpose">
-                                            <option value="">문의유형선택</option>
-                                            <option value="">교환/환불</option>
-                                            <option value="">배송문의</option>
-                                            <option value="">회원정보 수정</option>
-                                            <option value="">기타</option>
-                                        </select>
-                                    </form>
+                                    <div id="purpose_wrap">
+                                    <div id="purpose">
+                                        <p id="select">문의유형선택</p>
+                                        <span class="purpose_plus"><img src="../images/sub4/btn.png" alt="btn"></span>
+                                    </div>
+                                    <div class="option_wrap" id="option">
+                                        <p onclick="option1()">교환/환불</p>
+                                        <p onclick="option2()">배송문의</p>
+                                        <p onclick="option3()">회원정보 수정</p>
+                                        <p onclick="option4()">기타문의</p>
+                                    </div>
+                                </div>
                                 </li>
                             </ul>
                             <form action="#">
@@ -345,7 +350,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
 
             <!--sec4-->
             <div id="sub4_sec4">
