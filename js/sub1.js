@@ -9,6 +9,14 @@ $(".gnb ul li").mouseleave(function () {
     $(this).children(".submenu").stop().slideUp();
 });
 
+$(".inner_submenu").hide();
+$(".submenu li").mouseenter(function () {
+    $(this).children(".inner_submenu").stop().slideDown();
+});
+$(".submenu li").mouseleave(function () {
+    $(this).children(".inner_submenu").stop().slideUp();
+});
+
 //header_scroll
 $(window).scroll(function(){
     if($(this).scrollTop() >100){
