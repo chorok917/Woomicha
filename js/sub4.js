@@ -67,6 +67,38 @@ $(function(){
 	});
 });
 
+//question purpose
+$('.option_wrap').hide();
+$('#purpose').click(function(){
+    $('.option_wrap').toggle();
+});
+$(function(){
+    $('#purpose').click(function(){
+        $(this).children().children('img').toggleClass('turn')
+    });
+});
+
+function option1(){
+    document.getElementById('select').innerHTML = '교환/환불'
+    $('.option_wrap').hide()
+};
+function option2(){
+    document.getElementById('select').innerHTML = '배송문의'
+    $('.option_wrap').hide()
+};
+function option3(){
+    document.getElementById('select').innerHTML = '회원정보 수정'
+    $('.option_wrap').hide()
+};
+function option4(){
+    document.getElementById('select').innerHTML = '기타문의'
+    $('.option_wrap').hide()
+};
+$(function(){
+    $('#option p').click(function(){
+        $('.purpose_plus').toggleClass('turn');
+    });
+});
 
 //confetti
 document.getElementsByClassName("confetti")[0].addEventListener("click", () => {
