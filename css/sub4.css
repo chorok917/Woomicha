@@ -79,7 +79,6 @@ body {
     z-index: 99;
     width: 100%;
     background-color: #fff;
-    border-bottom: 2px solid #679267;
 }
 
 .header_scroll {
@@ -165,7 +164,6 @@ header {
     background-color: #679267;
     margin-right: 100px;
 }
-
 .left_gnb>li>a::after {
     content: "";
     display: inline-block;
@@ -191,7 +189,6 @@ header {
     background-color: #679267;
     margin-right: 100px;
 }
-
 .right_gnb>li>a::after {
     content: "";
     display: inline-block;
@@ -200,7 +197,6 @@ header {
     background-color: #679267;
     margin-left: 100px;
 }
-
 .left_gnb>li:nth-child(1)>a::after,
 .right_gnb>li:nth-child(1)>a::after {
     opacity: 0;
@@ -221,44 +217,36 @@ header {
 
 .submenu {
     position: absolute;
-    top: 44px;
+    top: 42px;
     left: 0;
     z-index: 99;
-    background-color: #ffffffe8;
+    background-color: #fff;
     width: 100%;
 }
-
+.submenu li{
+    position: relative;
+}
 .submenu li a {
     padding: 7px 8px;
 }
-
 .submenu li a span {
     font-size: 12px;
     opacity: .7;
 }
-
 .submenu li a:hover {
-    color: #fff;
-    background-color: #51877C;
+    color: #1eb78c;
 }
-
 .submenu li a:hover span {
     opacity: 1;
 }
 
-.inner_submenu {
-    width: 700px;
-    padding: 10px;
-}
-
-.inner_submenu li {
-    float: left;
-    width: 33.3%;
-}
-
-.submenu_tit {
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #679267;
+.inner_submenu{
+    position: absolute;
+    top:-1px;
+    right: -185px;
+    z-index: 999;
+    width: 80%;
+    background-color: #fff;
 }
 
 /*banner*/
@@ -267,7 +255,7 @@ header {
     background-attachment: fixed;
     background-position: top;
     height: 420px;
-    padding-top: 90px;
+    padding-top: 88px;
     color: #fff;
 }
 
@@ -452,7 +440,7 @@ header {
     transform: rotate(180deg);
 }
 
-.plus img {
+.faq_plus img {
     transition: transform 0.5s;
 }
 
@@ -489,32 +477,86 @@ header {
     padding-left: 155px;
 }
 .form li{
+    width: 40%;
     float: left;
-    margin: 0 20px 10px 0;
 }
 .form li form{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .name, .email, .file{
-    border-radius: 30px;
-    width: 300px;
-    height: 20px;
-    background-color: #fff;
-    padding: 5px 10px;
-}
-
-#purpose{
     outline: none;
     border: none;
-    width: 324px;
-    height: 30px;
+    border-radius: 30px;
+    width: 280px;
+    padding: 4px 10px;
     background-color: #fff;
-    border-radius: 14px;
-    padding: 5px 10px;
 }
+.file{
+    padding: 0;
+    cursor: pointer;
+}
+.file::-webkit-file-upload-button{
+    background-color: #214b33;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 4px 20px;
+    margin-right: 10px;
+    transition: all .3s;
+}
+.file::-webkit-file-upload-button:hover{
+    background-color: #73b78a;
+    padding: 4px 40px;
+    transition: all .4s;
+}
+
+#purpose_wrap{
+    position: relative;
+    width: 280px;
+    margin-left: 26px;
+}
+#purpose{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1px 6px;
+    background-color: #fff;
+}
+#purpose p{
+    width: 100px;
+    font-size: 14px;
+}
+.purpose_plus{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.option_wrap{
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px #838383;
+    cursor: pointer;
+}
+.option_wrap p{
+    padding: 4px;
+    font-size: 14px;
+}
+.option_wrap p:hover{
+    color: #081b21;
+    font-weight: bold;
+}
+.turn{
+    transform: rotate(180deg);
+}
+
 #question{
     outline: none;
     padding: 10px;
+    margin-top: 10px;
     resize: none;
 }
 .privacy{
@@ -536,6 +578,8 @@ header {
     float: right;
     margin: 10px 60px 0 0;
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 /*sec3*/
