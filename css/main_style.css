@@ -77,7 +77,6 @@ body {
     z-index: 99;
     width: 100%;
     background-color: #fff;
-    border-bottom: 2px solid #679267;
 }
 
 .header_scroll {
@@ -163,7 +162,6 @@ header {
     background-color: #679267;
     margin-right: 100px;
 }
-
 .left_gnb>li>a::after {
     content: "";
     display: inline-block;
@@ -189,7 +187,6 @@ header {
     background-color: #679267;
     margin-right: 100px;
 }
-
 .right_gnb>li>a::after {
     content: "";
     display: inline-block;
@@ -198,7 +195,6 @@ header {
     background-color: #679267;
     margin-left: 100px;
 }
-
 .left_gnb>li:nth-child(1)>a::after,
 .right_gnb>li:nth-child(1)>a::after {
     opacity: 0;
@@ -219,44 +215,36 @@ header {
 
 .submenu {
     position: absolute;
-    top: 44px;
+    top: 42px;
     left: 0;
     z-index: 99;
-    background-color: #ffffffe8;
+    background-color: #fff;
     width: 100%;
 }
-
+.submenu li{
+    position: relative;
+}
 .submenu li a {
     padding: 7px 8px;
 }
-
 .submenu li a span {
     font-size: 12px;
     opacity: .7;
 }
-
 .submenu li a:hover {
-    color: #fff;
-    background-color: #51877C;
+    color: #1eb78c;
 }
-
 .submenu li a:hover span {
     opacity: 1;
 }
 
-.inner_submenu {
-    width: 700px;
-    padding: 10px;
-}
-
-.inner_submenu li {
-    float: left;
-    width: 33.3%;
-}
-
-.submenu_tit {
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #679267;
+.inner_submenu{
+    position: absolute;
+    top:-1px;
+    right: -185px;
+    z-index: 999;
+    width: 80%;
+    background-color: #fff;
 }
 
 /*banner*/
@@ -890,7 +878,7 @@ footer a:hover {
     margin: 6px 0;
 }
 
-.call {
+input {
     border: none;
     display: inline-block;
     padding: 6px 20px 6px 6px;
