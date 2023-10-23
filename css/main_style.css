@@ -248,11 +248,6 @@ header {
 }
 
 /*banner*/
-@media (max-width:600px){
-    #banner{
-        width: 1380px;
-    }
-}
 * {
     margin: 0;
     padding: 0;
@@ -477,8 +472,9 @@ header {
 
 /*section3*/
 .sec3_wrap{
-    width: 100%;
+    width: 1920px;
 }
+
 #section3 {
     width: 1360px;
     margin: 0 auto;
