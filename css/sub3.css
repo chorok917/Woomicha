@@ -281,6 +281,9 @@ header {
 .event{
     padding-top: 20px;
 }
+.event h1{
+    font-size: 24px;
+}
 .event li{
     float: left;
     width: 630px;
