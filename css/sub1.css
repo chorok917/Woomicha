@@ -273,6 +273,11 @@ header {
 }
 
 /*container*/
+@media (max-width:960px){
+    #container{
+        width: 100%;
+    }
+}
 #container {
     width: 1320px;
     margin: 0 auto;
