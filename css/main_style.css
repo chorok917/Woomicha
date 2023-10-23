@@ -248,13 +248,6 @@ header {
 }
 
 /*banner*/
-@media (max-width:600px){
-    .bn_wrap{
-        width: 600px;
-        margin: 0 auto;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -428,62 +421,50 @@ header {
     transform: translateY(-20px);
     transition: transform .3s;
 }
-
 .sejak a:hover .name_bar {
     background-color: rgba(225, 230, 198, 0.8);
     color: green;
 }
-
 .young a:hover .name_bar {
     background-color: rgba(200, 230, 198, 0.8);
     color: green;
 }
-
 .middle a:hover .name_bar {
     background-color: rgba(166, 199, 172, 0.8);
     color: green;
 }
-
 .matcha a:hover .name_bar {
     background-color: rgba(92, 128, 103, 0.8);
     color: #f9f3f3;
 }
-
 .jasmin a:hover .name_bar {
     background-color: rgba(210, 201, 154, 0.8);
     color: rgb(41, 81, 109);
 }
-
 .hoji a:hover .name_bar {
     background-color: rgba(151, 128, 83, 0.8);
     color: #f9f3f3;
 }
-
 .oolong a:hover .name_bar {
     background-color: rgba(235, 214, 171, 0.8);
     color: #584017;
 }
-
 .black a:hover .name_bar {
     background-color: rgba(213, 120, 120, 0.8);
     color: #f9f3f3;
 }
-
 .pumkin a:hover .name_bar {
     background-color: rgba(230, 138, 59, 0.8);
     color: #f9f3f3;
 }
-
 .corn a:hover .name_bar {
     background-color: rgba(233, 229, 105, 0.8);
     color: #584017;
 }
-
 .ssuk a:hover .name_bar {
     background-color: rgba(75, 92, 82, 0.8);
     color: #f9f3f3;
 }
-
 .lemon a:hover .name_bar {
     background-color: rgba(247, 226, 109, 0.8);
     color: #85852e;
@@ -491,7 +472,7 @@ header {
 
 /*section3*/
 .sec3_wrap{
-    margin: 0 auto;
+    width: 100%;
 }
 #section3 {
     width: 1360px;
