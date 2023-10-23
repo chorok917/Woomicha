@@ -248,10 +248,13 @@ header {
 }
 
 /*banner*/
-.bn_wrap{
-    width: 1380px;
-    margin: 0 auto;
+@media (max-width:600px){
+    .bn_wrap{
+        width: 600px;
+        margin: 0 auto;
+    }
 }
+
 * {
     margin: 0;
     padding: 0;
