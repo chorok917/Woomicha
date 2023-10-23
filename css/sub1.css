@@ -742,6 +742,7 @@ figure img {
 /*sec6*/
 #sub1_sec6{
     padding: 120px 0;
+    overflow: hidden;
 }
 .rest{
     font-size: 40px;
