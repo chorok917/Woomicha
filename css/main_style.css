@@ -248,6 +248,11 @@ header {
 }
 
 /*banner*/
+@media (max-width:600px){
+    #banner{
+        width: 1380px;
+    }
+}
 * {
     margin: 0;
     padding: 0;
