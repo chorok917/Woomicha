@@ -282,12 +282,14 @@ header {
     padding-top: 20px;
     width: 1308px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .event h1{
     font-size: 24px;
 }
 .event li{
-    float: left;
     width: 630px;
     border: 2px solid #333;
     margin: 10px;
