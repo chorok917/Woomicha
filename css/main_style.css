@@ -473,6 +473,7 @@ header {
 /*section3*/
 .sec3_wrap{
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #section3 {
