@@ -350,9 +350,12 @@ header {
     margin-top: 20px;
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 .buy a:nth-child(1){
     margin-right: 16px;
+    background-color: #1C4419;
+    color: #fff;
 }
 .buy a::before{
     content: "";
@@ -365,9 +368,15 @@ header {
     transition: all .4s;
     z-index: -1;
 }
+.buy a:nth-child(1)::before{
+    background-color: #fff;
+}
 .buy a:hover{
     color: #fff;
     transition: all .6s;
+}
+.buy a:nth-child(1):hover{
+    color: #1C4419;
 }
 .buy a:hover::before{
     transform: translateY(-100%);
