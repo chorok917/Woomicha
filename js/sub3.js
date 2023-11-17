@@ -14,7 +14,7 @@ $(".submenu li").mouseenter(function () {
     $(this).children(".inner_submenu").stop().slideDown();
 });
 $(".submenu li").mouseleave(function () {
-    $(this).children(".inner_submenu").stop().slideUp();
+    $(this).children(".inner_submenu").stop().hide();
 });
 
 //header_scroll
