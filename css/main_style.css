@@ -559,7 +559,6 @@ header {
 #section4 {
     background-image: url(../images/main/section4/attachment.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-position: center;
     /* height: 600px; */
     height: 620px;
@@ -658,7 +657,7 @@ header {
 
 /*section6*/
 #section6 {
-    background: url(../images/main/section6/group_purchases.png) no-repeat center;
+    background: url(../images/main/section6/group_purchases.png) center;
     height: 300px;
 }
 
