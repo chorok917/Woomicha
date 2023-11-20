@@ -190,8 +190,12 @@ header {
     background-color: #679267;
     margin-left: 100px;
 }
+.left_gnb>li:nth-child(1)>a::before,
 .left_gnb>li:nth-child(1)>a::after,
-.right_gnb>li:nth-child(1)>a::after {
+.left_gnb>li:nth-child(2)>a::after,
+.right_gnb>li:nth-child(1)>a::before,
+.right_gnb>li:nth-child(1)>a::after,
+.right_gnb>li:nth-child(2)>a::after{
     opacity: 0;
 }
 
